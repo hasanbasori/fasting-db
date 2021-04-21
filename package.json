@@ -4,10 +4,11 @@
   "description": "",
   "main": "generate.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "json-server --watch generate.js --port 8080"
   },
   "keywords": [],
-  "author": "",
+  "author": "Hasanbasori",
   "license": "ISC",
   "dependencies": {
     "faker": "^5.5.3",

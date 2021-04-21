@@ -1,6 +1,7 @@
 {
   "name": "json-server",
   "version": "1.0.0",
+  "homepage": "https://github.com/hasanbasori/fasting-db/blob/main/README.md",
   "description": "",
   "main": "generate.js",
   "scripts": {

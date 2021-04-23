@@ -48,7 +48,9 @@ module.exports = function () {
       return {
         id: n + 1,
         title: faker.lorem.sentence(),
-        image: n % 2 === 0 ? faker.image.sports() : faker.image.people(),
+        // image: n % 2 === 0 ? faker.image.sports() : faker.image.people(),
+
+        image: faker.random.image(),
         description: faker.lorem.paragraphs(),
         userId: 2,
       };

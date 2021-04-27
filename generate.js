@@ -66,5 +66,21 @@ module.exports = function () {
       { id: 8, value: "48 h." },
       { id: 9, value: "72 h." },
     ],
+    summaries: _.times(2, function (n) {
+      const id = n + 1;
+      const { random } = faker;
+      const totalFastMax = random.number({ min: 1, max: 50 });
+      return {
+        id,
+        weeklyFastHourAvg: random.number({ min: 7, max: 29 }),
+        longestFastHour: random.number(48),
+        longestStreakHour: random.number({ max: 10, precision: 2 }),
+        totalFastHour: random.number({ min: 12, max: 48, precision: 2 }),
+        totalStreakHour: random.number({ min: 0, max: 15, precision: 2 }),
+        totalFast: totalFastMax,
+        totalStreak: random.number({ min: 0, max: totalFastMax }),
+        userId: id % 2 ? 1 : 2,
+      };
+    }),
   };
 };
